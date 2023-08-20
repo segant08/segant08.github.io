@@ -17,13 +17,10 @@ header {
         height: auto;
     }
 
-    header h1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 2rem;
-    }
+h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+}
 
 .oyunlar {
     display: flex;
