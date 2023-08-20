@@ -12,10 +12,10 @@ header {
     overflow: hidden;
 }
 
-    header img {
-        width: 100%;
-        height: auto;
-    }
+header img {
+    width: 100%;
+    height: auto;
+}
 
 h1 {
     margin-top: 20px;
@@ -25,34 +25,42 @@ h1 {
 .oyunlar {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Oyun bloklar�n� sol tarafa hizala */
+    justify-content: center;
     margin-top: 30px;
 }
 
 .oyun {
     flex: 0 0 calc(33.33% - 20px);
     margin: 10px;
-    text-decoration: none;
     color: #333;
     text-align: center;
     box-sizing: border-box;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-    .oyun img {
-        width: 100%;
-        height: auto;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        transition: transform 0.2s;
-    }
+.oyun img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
 
-    .oyun p {
-        margin-top: 5px;
-        font-weight: bold;
-    }
+.oyun p {
+    margin-top: 5px;
+    font-weight: bold;
+}
 
-    .oyun img:hover {
-        transform: scale(1.05);
-    }
+.oyun img:hover {
+    transform: scale(1.05);
+}
+
+.oyun .oyun-isim {
+    margin-top: 10px;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
